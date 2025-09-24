@@ -4,26 +4,26 @@ import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
-    <div className="pt-[5em] min-h-[100vh]">
-    <div  className="flex flex-col  items-center justify-center py-16 px-[4em]">
-      <h1 className="uppercase pb-[1em]">Clarity. Structure. Growth</h1>
+    <div className="w-full pt-[5em] md:min-h-[100vh]">
+    <div  className="w-full flex flex-col  items-center justify-center py-4 md:py-16 px-4 md:px-[2em] xl:px-[4em] ">
+      <h1 className="w-full uppercase pb-[1em]">Clarity. Structure. Growth</h1>
 
-      <div className="flex w-full h-[60vh]">
-        <div className="w-[45%] h-full">
-            <img className="w-[93%] h-full  object-cover object-left-top" src={hero1} alt="hero-image" />
+      <div className="md:flex md:justify-between w-full  md:h-[35vh] lg:min-h-[35vh] xl:min-h-[60vh] ">
+        <div className="w-full md:w-[57%] lg:w-[60%] lg:hfull xl:h-full xl:w-[45%]">
+            <img className="w-full md:w-[93%] h-full  object-cover object-left-top" src={hero1} alt="hero-image" />
         </div>
-        <div className="w-[55%] pl-[3em] flex  flex-col">
-            <p className="text-left text-[1em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations and individuals. From HR outsourcing solutions to career growth programs and accountability coaching, we create clarity, structure, and systems that empower long-term success.</p>
+        <div className="w-full md:w-[43%] lg:w-[40%] xl:w-[55%] md:pl-[1em] xl:pl-[3em] pt-4 md:pt-0 flex  flex-col">
+            <p className="text-left text-[0.7em] md:text-[0.8em] lg:text-[1em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations and individuals. From HR outsourcing solutions to career growth programs and accountability coaching, we create clarity, structure, and systems that empower long-term success.</p>
                 <br />
                 <br />
-            <p className="text-left text-[1em]">Helping organizations and individuals gain clarity, build structure, and achieve growth — in business, career, and life</p>
+            <p className="text-left text-[0.7em] md:text-[0.8em]  lg:text-[1em]">Helping organizations and individuals gain clarity, build structure, and achieve growth — in business, career, and life</p>
             <br />
             <button>Work with us</button>
         </div>
       </div>
     </div>
     <div>
-        <div className="border-y-2 border-[#00000033] py-1">
+        <div className="border-y-2 border-[#00000033] py-1 mt-4 md: mt-2">
             <Marquee speed={60} gradient={false} pauseOnHover>
                 <h2>
                     Talent Acquisition     &nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;    HR Department SetUp  &nbsp;&nbsp;&nbsp;    •    &nbsp;&nbsp;&nbsp;   Background Checks    &nbsp;&nbsp;&nbsp;     •    &nbsp;&nbsp;&nbsp;    HR Advisory
