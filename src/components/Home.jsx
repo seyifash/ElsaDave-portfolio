@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
-    <div className="w-full pt-[5em] md:min-h-[100vh]">
+    <div className="w-full pt-[5em] md:min-h-[70vh] lg:min-h-[70vh] xl:min-h-[100vh]">
     <div  className="w-full flex flex-col  items-center justify-center py-4 md:py-16 px-4 md:px-[2em] xl:px-[4em] ">
       <h1 className="w-full uppercase pb-[1em]">Clarity. Structure. Growth</h1>
 
@@ -18,7 +18,7 @@ export default function Home() {
                 <br />
             <p className="text-left text-[0.7em] md:text-[0.8em]  lg:text-[1em]">Helping organizations and individuals gain clarity, build structure, and achieve growth — in business, career, and life</p>
             <br />
-            <button>Work with us</button>
+            <button className="btn">Work with us</button>
         </div>
       </div>
     </div>
