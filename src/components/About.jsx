@@ -1,6 +1,8 @@
+import aboutimage from "../assets/about-img-1.png";
+
 export default function About() {
   return (
-    <div className="min-h-[100vh] lg:min-h-[50vh] flex flex-col items-center w-full  px-4 py-[1.5em] md:px-[4em] md:py-[3em]">
+    <div className="min-h-[100vh] flex flex-col items-center w-full  px-4 py-[1.5em] md:px-[4em] md:py-[3em]">
       <div className="flex flex-col md:flex-row w-full md:justify-between md:items-center">
         <h3 className="w-full md:w-[50%] text-left md:text-[1.7em] lg:text-[2em] xl:text-[3em] text-[#02193B] uppercase font-bold fonts">Ut imperdiet nulla id ugiat In ultricies.</h3>
         <div className="w-full md:w-[40%] flex flex-col items-start">
@@ -21,6 +23,12 @@ export default function About() {
             <h3 className="uppercase text-white fonts font-bold text-left  ">For Business Owners</h3>
             <p className="text-xs text-white fonts text-left pr-16 font-light">Structure, clarity, and accountability to scale sustainably.</p>
         </div>
+      </div>
+      <div className="w-full flex about-bg1 h-[90vh]">
+        <div className="w-[50%]  h-full relative">
+          <img className="w-full h-full absolute top-0 left-[20px]" src={aboutimage} alt="about-image" />
+        </div>
+         <div className="flex-1"></div>
       </div>
     </div>
   );

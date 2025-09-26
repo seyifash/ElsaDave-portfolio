@@ -92,6 +92,16 @@ button:focus-visible {
   background-size: cover;
   background-position: center;
 }
+
+.about-bg1 {
+  background-image: linear-gradient(#002651D9),
+  url('../src/assets/about-bg-1.jpg');
+  background-size: cover;
+}
+.abt-img {
+   background-image: url('../assets/about-img-1.png');
+    background-size: cover;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
