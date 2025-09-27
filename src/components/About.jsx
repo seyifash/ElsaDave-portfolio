@@ -1,4 +1,5 @@
 import aboutimage from "../assets/about-img-1.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -24,11 +25,25 @@ export default function About() {
             <p className="text-xs text-white fonts text-left pr-16 font-light">Structure, clarity, and accountability to scale sustainably.</p>
         </div>
       </div>
-      <div className="w-full flex about-bg1 h-[90vh]">
-        <div className="w-[50%]  h-full relative">
-          <img className="w-full h-full absolute top-0 left-[20px]" src={aboutimage} alt="about-image" />
+      <div className="w-full min-h-[50vh] lg:flex about-bg1 lg:min-h-[40vh] 2xl:h-[90vh] mt-10">
+        <div className=" w-full lg:w-[50%]  h-full relative">
+          <img className="w-full h-full absolute top-0 left-[7px]" src={aboutimage} alt="about-image" />
         </div>
-         <div className="flex-1"></div>
+         <div className=" w-full 2xl:w-[50%] px-4 flex md:pl-14 flex-col justify-center">
+            <div className="pt-4">
+              <h3 className="uppercase text-left text-white font-bold  text-2xl/15 lg:text-4xl/20">Who We Are</h3>
+              <p className="text-white text-sm font-light text-left pr-[4em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations and individuals. From HR outsourcing solutions to career growth programs and accountability coaching, we create clarity, structure, and systems that empower long-term success.</p>
+            </div>
+             <div className="py-8">
+              <h3 className="uppercase text-left text-white font-bold text-2xl lg:text-4xl/20">Our Promise</h3>
+              <ul className="list-inside text-left list-disc">
+                  <li className="text-white text-sm">Clear guidance, not jargon</li>
+                  <li className="text-white text-sm">Practical solutions that work</li>
+                  <li className="text-white text-sm">A partner who walks the journey with you</li>
+              </ul>
+            </div>
+            <Link to="/" className="bg-white text-[#002651] p-2 w-[30%] text-sm">Meet Our Team</Link>
+         </div>
       </div>
     </div>
   );
