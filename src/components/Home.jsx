@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
-    <div className="w-full pt-[5em] md:min-h-[70vh] lg:min-h-[70vh] xl:min-h-[100vh]">
-    <div  className="w-full flex flex-col  items-center justify-center py-4 md:py-16 px-4 md:px-[2em] xl:px-[4em] ">
+    <div className="w-full pt-[2em] md:min-h-[70vh]  lg:min-h-[60vh] xl:min-h-[100vh]">
+    <div  className="w-full flex flex-col  items-center 2xl:justify-center py-4 md:py-5 lg:min-h-[40vh] px-4 md:px-[2em] xl:px-[4em] ">
       <h1 className="w-full uppercase pb-[1em]">Clarity. Structure. Growth</h1>
 
       <div className="md:flex md:justify-between w-full  md:h-[35vh] lg:min-h-[35vh] xl:min-h-[60vh] ">
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
     </div>
     <div>
-        <div className="border-y-2 border-[#00000033] py-1 mt-4 md: mt-2">
+        <div className="border-y-2 border-[#00000033] py-1 mt-4 md:mt-2 lg:mt-16">
             <Marquee speed={60} gradient={false} pauseOnHover>
                 <h2>
                     Talent Acquisition     &nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;    HR Department SetUp  &nbsp;&nbsp;&nbsp;    •    &nbsp;&nbsp;&nbsp;   Background Checks    &nbsp;&nbsp;&nbsp;     •    &nbsp;&nbsp;&nbsp;    HR Advisory
