@@ -18,7 +18,7 @@ export default function Navbar() {
         <a href="#contact" className="text-black text-base" style={{ margin: "0 1rem" }}>CONTACT</a>
       </div>
       <div className="flex text-2xl lg:hidden"><i className="bx bx-menu" onClick={() => setActive(prevState => !prevState)}></i></div>
-      <div className={`${active ? 'right-0': '-right-[50%]'} transition-all ease-in duration-400 mobile-nav px-4 py-4 text-left flex flex-col absolute w-[50%] h-[100vh] top-15 sm:top-19 bg-white lg:hidden`}> 
+      <div className={`${active ? 'right-0': '-right-[50%]'} transition-all ease-in duration-400 mobile-nav px-4 py-4 text-left flex flex-col absolute w-[50%] h-[100vh] top-15 sm:top-19 bg-[#FAF4EC] lg:hidden`}> 
           <a href="#home" className="text-base text-black py-4" style={{ margin: "0 1rem" }}>HOME </a>
           <a href="#about" className="text-black text-base py-4" style={{ margin: "0 1rem" }}>ABOUT</a>
           <a href="#services" className="text-black text-base py-4" style={{ margin: "0 1rem" }}>SERVICES</a>
