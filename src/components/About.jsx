@@ -1,14 +1,19 @@
 import aboutimage from "../assets/about-img-4.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function About() {
   return (
     <div className="min-h-[100vh] flex flex-col items-center w-full  px-4 py-[2em] md:px-[2em] xl:px-[4em] md:py-[3em]">
       <div className="flex flex-col md:flex-row w-full md:justify-between md:items-center">
-        <h3 className="w-full md:w-[50%] text-left md:text-[1.7em] lg:text-[2em] xl:text-[3em] text-[#02193B] uppercase font-bold fonts">Ut imperdiet nulla id ugiat In ultricies.</h3>
+        <h3 className="w-full md:w-[50%] text-left md:text-[1.7em] lg:text-[2em] xl:text-[3em] text-[#02193B] uppercase font-bold fonts">
+          Ut imperdiet nulla id ugiat In ultricies.
+        </h3>
         <div className="w-full md:w-[40%] flex flex-col items-start">
             <p className="text-left text-[0.7em] md:text-[0.7em] lg:text-[1em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations.</p>
-            <button className="bg-[#002651] w-[50%] text-[0.7em] md:text-[0.7em] md:w-[70%] lg:w-[60%] xl:w-[40%] px-2 py-2 lg:text-[0.9em] text-white mt-4 font-normal fonts">Explore Our Services</button>
+            <HashLink smooth to="#services" className="bg-[#002651] w-[50%] text-[0.7em] md:text-[0.7em] md:w-[70%] lg:w-[60%] xl:w-[40%] px-2 py-2 lg:text-[0.9em] text-white mt-4 font-normal fonts">
+              Explore Our Services
+            </HashLink>
         </div>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 md:py-10 gap-10">

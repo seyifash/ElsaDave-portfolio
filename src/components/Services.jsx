@@ -1,6 +1,7 @@
 import servicesImg from '../assets/services-img.jpg'
 import servicesImg2 from '../assets/serviceImg2.jpg';
 import servicesImg3 from '../assets/serviceImg3.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   return (
@@ -80,7 +81,9 @@ export default function Services() {
               <span><strong  className="pl-2">HR Advisory</strong>&nbsp; – &nbsp;Access flexible, on-demand HR expertise.</span>
             </li>
           </ul>
-          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">Book HR Support</button>
+          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">
+            <Link to="https://forms.gle/gYyggFjGAiCYtzvM7">Book HR Support</Link>
+          </button>
         </div>
       </div>
        <div className="flex flex-col md:gap-10 xl:flex-row w-full border-b border-t border-[#00000033] py-8  md:py-12">
@@ -136,7 +139,9 @@ export default function Services() {
               <span><strong  className="pl-2"> Career Transition Support</strong>&nbsp; – &nbsp;Move confidently into your next career chapter.</span>
             </li>    
           </ul>
-          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">Start Your Career Journey</button>
+          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">
+            <Link  to="https://sites.google.com/view/settleinhr/home">Start Your Career Journey</Link>
+          </button>
         </div>
         
         <div className="w-full lg:flex-1">
@@ -200,7 +205,9 @@ export default function Services() {
               <span><strong  className="pl-2">Personal Growth Accountability</strong>&nbsp; – &nbsp;Have a trusted partner to help you stay on track with your goals.</span>
             </li>
         </ul>
-          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">Book a Clarity Session</button>
+          <button className="bg-[#002651] text-white fonts text-xs py-2 px-4 md:text-sm font-extralight mt-6 md:mt-6 xl:mt-12">
+            <Link to="https://docs.google.com/forms/d/19qvvhX5Ip46U_OP6t0aRy_iNKOD1c1QEzmmcGMOPLBE/edit">Book a Clarity Session</Link>
+            </button>
         </div>
       </div>
     </div>

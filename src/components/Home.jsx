@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import hero1 from "../assets/heroImage1.jpg";
 import Marquee from "react-fast-marquee";
-
+import { HashLink } from "react-router-hash-link";
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
                 <br />
             <p className="text-left text-[0.7em] md:text-[0.8em]  lg:text-[1em]">Helping organizations and individuals gain clarity, build structure, and achieve growth — in business, career, and life</p>
             <br />
-            <button className="btn">Work with us</button>
+            <HashLink smooth to="#contact" className="btn">
+              Work with us
+            </HashLink>
         </div>
       </div>
     </div>
