@@ -7,7 +7,7 @@ export default function About() {
     <div className="min-h-[100vh] flex flex-col items-center w-full  px-4 py-[2em] md:px-[2em] xl:px-[4em] md:py-[3em]">
       <div className="flex flex-col md:flex-row w-full md:justify-between md:items-center">
         <h3 className="w-full md:w-[50%] text-left md:text-[1.7em] lg:text-[2em] xl:text-[3em] text-[#02193B] uppercase font-bold fonts">
-          Ut imperdiet nulla id ugiat In ultricies.
+          ABOUT US
         </h3>
         <div className="w-full md:w-[40%] flex flex-col items-start">
             <p className="text-left text-[0.7em] md:text-[0.7em] lg:text-[1em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations.</p>

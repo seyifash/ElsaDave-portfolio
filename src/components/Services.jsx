@@ -7,8 +7,7 @@ export default function Services() {
   return (
     <div style={{width: "100%", display: "flex", flexDirection: 'Column',alignItems: "flex-start"}} className="px-4 md:px-[2em] lg:px-[2em] xl:px-[4em] md:min-h-100vh">
       <div className="w-full xl:w-[50%] pb-6 md:pb-[2em]" >
-        <h3 className="h3-normal">Our Services</h3>
-        <h3 className="h3-light w-full uppercase">Ut imperdiet nulla id ugiat In ultricies.</h3>
+        <h3 className="h3-light w-full uppercase">OUR SERVICE</h3>
       </div>
       <div className="flex flex-col md:gap-10 xl:flex-row w-full border-b border-t border-[#00000033] py-8  md:py-12">
         <div className="w-full lg:flex-1">
