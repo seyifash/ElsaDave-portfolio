@@ -32,7 +32,10 @@ export default function About() {
       </div>
       <div className="w-full min-h-[40vh] lg:flex about-bg1 md:min-h-[36vh] lg:min-h-[38vh] xl:min-h-[100vh] 2xl:min-h-[100vh] xl:mt-10">
         <div className=" w-full hidden xl:flex lg:w-full xl:w-[50%] 2xl:w-[50%] h-full relative">
-          <img className="w-full h-full top-0 left-[7px]" src={aboutimage} alt="about-image" loading="lazy" />
+          <img className="w-full h-full top-0 left-[7px]" src={aboutimage} 
+          alt="about-image" 
+          loading="eager"
+          fetchpriority="high" />
         </div>
          <div className=" w-full xl:w-[50%] 2xl:w-[50%] px-4 flex md:pl-14 flex-col">
             <div className="pt-2 xl:pt-4 mt-4 xl:mt-20">
