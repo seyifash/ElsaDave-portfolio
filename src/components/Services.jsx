@@ -11,7 +11,7 @@ export default function Services() {
       </div>
       <div className="flex flex-col md:gap-10 xl:flex-row w-full border-b border-t border-[#00000033] py-8  md:py-12">
         <div className="w-full lg:flex-1">
-          <img  src={servicesImg} alt="services"/>
+          <img  src={servicesImg} alt="services" loading="eager" fetchpriority="high"/>
         </div>
         <div  className="w-full py-4 lg:flex-1 text-left gap-10">
           <div>
@@ -144,13 +144,13 @@ export default function Services() {
         </div>
         
         <div className="w-full lg:flex-1">
-          <img  src={servicesImg2} alt="services"/>
+          <img  src={servicesImg2} alt="services"  loading="eager" fetchpriority="high"/>
         </div>       
       </div>
 
        <div className="flex flex-col md:gap-10 xl:flex-row w-full border-b border-t border-[#00000033] py-8  md:py-12">
         <div className="w-full xl:flex-1">
-          <img  src={servicesImg3} alt="services"/>
+          <img  src={servicesImg3} alt="services" loading="eager" fetchpriority="high"/>
         </div>
         <div  className="w-full py-4 xl:flex-1 text-left md:gap-4 xl:gap-10">
           <div>

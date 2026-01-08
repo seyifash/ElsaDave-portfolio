@@ -11,7 +11,11 @@ export default function Home() {
 
       <div className="md:flex md:justify-between w-full  md:h-[35vh] lg:min-h-[35vh] xl:min-h-[60vh] ">
         <div className="w-full md:w-[57%] lg:w-[60%] lg:hfull xl:h-full xl:w-[45%]">
-            <img className="w-full md:w-[93%] h-full  object-cover object-left-top" src={hero1} alt="hero-image" />
+            <img className="w-full md:w-[93%] h-full  object-cover object-left-top" 
+            src={hero1}
+            loading="eager"
+            fetchpriority="high" 
+            alt="hero-image" />
         </div>
         <div className="w-full md:w-[43%] lg:w-[40%] xl:w-[55%] md:pl-[1em] xl:pl-[3em] pt-4 md:pt-0 flex  flex-col">
             <p className="text-left text-[0.7em] md:text-[0.8em] lg:text-[1em]">Elsadave Consulting is a people-focused consulting firm that bridges the gap between organizations and individuals. From HR outsourcing solutions to career growth programs and accountability coaching, we create clarity, structure, and systems that empower long-term success.</p>
