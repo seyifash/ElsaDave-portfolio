@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [details, setDetails] = useState({
@@ -20,6 +21,29 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(details);
+
+    // Send email using EmailJS
+    emailjs.send(
+      "service_37v1a4c", 
+      "template_b0qa3xh", 
+      {
+        firstName: details.firstName,
+        email: details.email,
+        phoneNumber: details.phoneNumber,
+        message: details.message
+      },
+      "9GVNd5rDx3GMXKzLX" 
+    )
+    .then(
+      (response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Your details have been sent successfully!");
+      },
+      (error) => {
+        console.error("Failed to send email:", error);
+        alert("Failed to send details. Please try again.");
+      }
+    );
     setDetails({
     firstName: "",
     email: "",
